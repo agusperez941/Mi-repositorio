@@ -16,7 +16,7 @@
 /* config index */
 
 .body1{
-    background-color: #141F66;
+    background-color: black;
 }
 
 .grilla{
@@ -27,55 +27,14 @@
         "footer";
 }
 
-header{
-    grid-area: header;
-    display: flex;
-    flex-direction: row;
-    font-family: Nike;
-    background-color: #000000;
-    height: 4cm;
-    text-align: center;
-    width: 1489px;
-}
-
-nav{
-    grid-area: header;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 50px;
-    align-items: center;
-}
-
-nav ul li{
-    grid-area: header;
-    display: flex;
-    list-style-type: none;
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 30px;
-}
-
-nav ul li a{
-    grid-area: header;
-    color: white;
-    text-decoration:none;
-    font-size: 1cm;
-}
-
-header div img{
-    grid-area: header;
-    height: 170px;
-    width: 200px;
-}
 
 .main1{
     grid-area: main;
     background-image:url( https://cdn.create.vista.com/api/media/medium/198498184/stock-photo-pink-purple-smoke-abstract-black?token=);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 1489px;
+    background-attachment: fixed;
+    background-position: center center;
 } 
 
 .titulodeimagen{
@@ -86,101 +45,46 @@ header div img{
 .tituloindex{
     font-family: Letraanimada;
     color: white;
-    padding: 20px 20px 20px 20px;
-    border: 5px double white;
-    margin: 10px 15cm 10px 15cm;
-    text-align: center;
 
 }
+.card2 h2{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+}
+.card2 h5{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+}
 
-.tituloindex:hover{
-    transform: rotate(90deg) translate(0px, 0px);
+.card2 p{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 footer{
     grid-area: footer;
     color: rgb(255, 255, 255);
-    background-color: #000000;
     font-family: Nike;
-    text-align: center;
-    width: 1489px;
-    height: 6cm;
-}
-
-footer div{
-    margin: 1cm 2cm 1cm 3cm;
-    display: inline-block;
-}
-
-#id{
-    color: white;
-    font-family: Letraanimada;
-}
-
-@media screen and (min-width: 767px){
-
-    header{
-        background-color: white;
-    }
-    nav ul li a{
-        color: rgb(0, 0, 0);
-    }
-
-    footer{
-        background-color: white;
-        color: rgb(0, 0, 0);
-    }
-
-    #id{
-        color: rgb(0, 0, 0);
-    }
-
-}
-
-@media screen and (min-width: 768px){
-
-    header{
-        background-color: rgb(255, 0, 0);
-    }
-    nav ul li a{
-        color: rgb(234, 255, 0);
-    }
-
-    footer{
-        background-color: rgb(255, 0, 0);
-        color: rgb(234, 255, 0);
-    }
-
-    #id{
-        color: rgb(234, 255, 0);
-    }
-
-}
-
-@media screen and (min-width: 1024px){
-
-    header{
-        background-color: rgb(0, 0, 0);
-    }
-    nav ul li a{
-        color: rgb(255, 255, 255);
-    }
-
-    footer{
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
-    }
-
-    #id{
-        color: rgb(255, 255, 255);
-    }
-
+    background: radial-gradient(
+        300% 200% at 50% 96%,
+        rgb(137, 21, 253) 12%,
+        rgb(0, 0, 0) 24%
+      );
+      transform: translate(0px, 0px);
+      font-size: 15px;
 }
 
 /* config de Contacto*/
 
 body{
-    background-color: #141F66;
+    background-color: black;
+}
+
+.header_contactanos{
+    grid-area: header_contacto;
 }
 
 .grilla_contacto{
@@ -191,124 +95,138 @@ body{
         "footer_contacto";
 }
 
-.header_contactanos{
-    grid-area: header_contacto;
-    display: flex;
-    flex-direction: row;
-    font-family: Nike;
-    background-color: #000000;
-    height: 4cm;
-    text-align: center;
-    padding: auto;
-    width: 1489px;
-}
-
-.header_contactanos nav ul li{
-    grid-area: header_contacto;
-    list-style-type: none;
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 30px;
-}
-
-.header_contactanos nav ul li a{
-    grid-area: header_contacto;
-    color: white;
-    text-decoration:none;
-    font-size: 1cm;
-}
-
-.header_contactanos img{
-    grid-area: header_contacto;
-    height: 170px;
-    width: 200px;
-}
-
 .maincontacto{
     grid-area: contactanos_contacto;
     background-image:url( https://i0.wp.com/thesolehouse.com/wp-content/uploads/2022/02/air-max-90-bacpn.jpg?fit=1000%2C600&ssl=1);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 1489px;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 .cuadrado{
     grid-area: contactanos_contacto;
-    margin: 1cm 5cm 1cm 5cm;
-    display: block;
-    width: 300px;
+    width: 310px;
     height: 500px;
-    background-color: gray;
-    justify-content: center;
+    background: radial-gradient(
+        500% 170% at 50% 93%,
+        rgba(0, 0, 0, 1) 12%,
+        rgb(46, 46, 46) 24%
+      );
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;
+      margin: 1cm 1cm 1cm 3cm;
 }
 
-.cuadrado:hover{
-    transform: rotate(90deg) translate(0px, 0px);
+.section_contacto{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.section_contacto .h1_contacto{
+    border: 2px dashed white;
+    padding-left: 25px;
+    color: white;
+
 }
 
 .footer_contacto{
     grid-area: footer_contacto;
-    color: white;
-    background-color: #000000;
+    color: rgb(255, 255, 255);
     font-family: Nike;
-    text-align: center;
-    height: 6cm;
-    width: 1489px;
+    background: radial-gradient(
+        300% 200% at 50% 96%,
+        rgb(137, 21, 253) 12%,
+        rgb(0, 0, 0) 24%
+      );
+      transform: translate(0px, 0px);
+      font-size: 15px;
 }
 
-.footer_contacto div{
-    margin: 1cm 2cm 1cm 3cm;
-    display: inline-block;
+/* config de Contacto*/
+
+body{
+    background-color: black;
 }
 
-@media screen and (min-width: 767px){
-
-    .header_contactanos{
-        background-color: #ffffff;
-    }
-
-    .header_contactanos nav ul li a{
-        color: rgb(0, 0, 0);
-    }
-
-    .footer_contacto{
-        color: rgb(0, 0, 0);
-        background-color: #ffffff;
-    }
+.header_contactanos2{
+    grid-area: header_contacto;
 }
 
-@media screen and (min-width: 768px){
-
-    .header_contactanos{
-        background-color: rgb(255, 0, 0);
-    }
-
-    .header_contactanos nav ul li a{
-        color: rgb(234, 255, 0);
-    }
-
-    .footer_contacto{
-        background-color: rgb(255, 0, 0);
-        color: rgb(234, 255, 0);
-    }
+.grilla_contacto2{
+    display: grid;
+    grid-template-areas: 
+        "header_contacto" 
+        "contactanos_contacto" 
+        "footer_contacto";
 }
 
-@media screen and (min-width: 1024px){
-
-    .header_contactanos{
-        background-color: #000000;
-    }
-
-    .header_contactanos nav ul li a{
-        color: rgb(255, 255, 255);
-    }
-
-    .footer_contacto{
-        color: rgb(255, 255, 255);
-        background-color: #000000;
-    }
+.maincontacto2{
+    grid-area: contactanos_contacto;
+    background-image:url( https://i0.wp.com/thesolehouse.com/wp-content/uploads/2022/02/air-max-90-bacpn.jpg?fit=1000%2C600&ssl=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
+
+.cuadrado{
+    grid-area: contactanos_contacto;
+    width: 310px;
+    height: 500px;
+    background: radial-gradient(
+        500% 170% at 50% 93%,
+        rgba(0, 0, 0, 1) 12%,
+        rgb(46, 46, 46) 24%
+      );
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;
+      margin: 1cm 1cm 1cm 3cm;
+}
+
+.texto1{
+    font-size: 0.65cm;
+}
+
+#botonashe{
+    background-color: black;
+    border: 10px, solid,white;
+
+}
+
+.section_contacto2{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.section_contacto2 .h1_contacto{
+    border: 2px dashed white;
+    padding-left: 40px;
+    color: white;
+
+}
+
+.footer_contacto2{
+    grid-area: footer_contacto;
+    color: rgb(255, 255, 255);
+    font-family: Nike;
+    background: radial-gradient(
+        300% 200% at 50% 96%,
+        rgb(137, 21, 253) 12%,
+        rgb(0, 0, 0) 24%
+      );
+      transform: translate(0px, 0px);
+      font-size: 15px;
+}
+
 
 /* config de productos*/
 
@@ -320,41 +238,23 @@ body{
     "footer_productos" ;
 }
 
-.header_productos{
-    grid-area: header_productos;
-    font-family: Nike;
-    background-color: #000000;
-    height: 4cm;
-    text-align: center;
-    padding: auto;
-    width: 1489px;
-}
-
-.header_productos nav ul li{
-    grid-area: header_productos;
-    list-style-type: none;
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 30px;
-}
-
-.header_productos nav ul li a{
-    grid-area: header_productos;
-    color: rgb(255, 255, 255);
-    text-decoration:none;
-    font-size: 1cm;
-}
-
 .productos_productos{
     grid-area: ropa1_productos;
     display: flex;
     flex-direction: column;
     background-image:url( https://cdn.create.vista.com/api/media/medium/198499840/stock-photo-creative-black-background-purple-smoke?token=);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 1150px;
-    width: 1400px;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.section_productos{
+    grid-area: ropa1_productos;
+}
+
+.row{
+    grid-area: ropa1_productos;
 }
 
 .titulo_ropa{
@@ -363,102 +263,29 @@ body{
     align-content: center;
     justify-content: center;
     margin-top: 2cm;
-    height: 3cm;
+    height: 2cm;
 }
 
 .h1_ropa{
-    height: 2cm;
-    width: 4cm;
+    height: 4cm;
+    width: 20cm;
     justify-content: center;
     align-items: center;
     font-family: Letraanimada;
-    color: white;
-}
-
-.section_productos{
-    margin-top: 2cm;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.ropa1{
-    grid-area: ropa1_productos;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1cm 2cm 1cm 2cm;
-    display: block;
-    width: 250px;
-    height: 375px;
-    background-color: rgb(0, 0, 0);
+    color: rgb(137, 21, 253);
 }
 
 .footer_productos{
     grid-area: footer_productos;
-    color: white;
-    background-color: #000000;
+    color: rgb(255, 255, 255);
     font-family: Nike;
-    text-align: center;
-    width: 1489px;
-    height: 6cm;
-}
-
-.footer_productos div{
-    grid-area: footer_productos;
-    margin: 1cm 2cm 1cm 3cm;
-    display: inline-block;
-}
-
-@media screen and (min-width: 767px){
-
-    .header_productos{
-        background-color: #ffffff;
-    }
-
-    .header_productos nav ul li a{
-        color: rgb(0, 0, 0);
-    }
-
-    .footer_productos{
-        color: rgb(0, 0, 0);
-        background-color: #ffffff;
-    }
-
-}
-
-@media screen and (min-width: 768px){
-
-    .header_productos{
-        background-color: rgb(255, 0, 0);;
-    }
-
-    .header_productos nav ul li a{
-        color: rgb(234, 255, 0);
-    }
-
-    .footer_productos{
-        background-color: rgb(255, 0, 0);
-        color: rgb(234, 255, 0);
-    }
-
-}
-
-@media screen and (min-width: 1024px){
-
-    .header_productos{
-        background-color: #000000;
-    }
-
-    .header_productos nav ul li a{
-        color: rgb(255, 255, 255);
-    }
-
-    .footer_productos{
-        color: rgb(255, 255, 255);
-        background-color: #000000;
-    }
-
+    background: radial-gradient(
+        300% 200% at 50% 96%,
+        rgb(137, 21, 253) 12%,
+        rgb(0, 0, 0) 24%
+      );
+      transform: translate(0px, 0px);
+      font-size: 15px;
 }
 
 /* config de nosotros*/
@@ -473,105 +300,67 @@ body{
 
 .header_nosotros{
     grid-area: header_nosotros;
-    font-family: Nike;
-    background-color: #000000;
-    height: 4cm;
-    text-align: center;
-    padding: auto;
-    width: 1489px;
 }
 
-.header_nosotros nav ul li{
-    grid-area: header_nosotros;
-    list-style-type: none;
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 30px;
-}
-
-.header_nosotros nav ul li a{
-    grid-area: header_nosotros;
-    color: rgb(255, 255, 255);
-    text-decoration:none;
-    font-size: 1cm;
-}
-
-.header_nosotros img{
-    grid-area: header_nosotros;
-    height: 170px;
-    width: 200px;
+.h1_nosotros{
+    grid-area: nosotros_nosotros;
+    color: rgb(26, 127, 150);
+    font-size: 60px;
+    font-weight: bold;
 }
 
 .nosotros_nosotros{
     grid-area: nosotros_nosotros;
     background-image:url( https://conteudo.imguol.com.br/c/esporte/cf/2022/01/17/sede-global-da-nike-em-beaverton-em-oregon-nos-estados-unidos-1642455392796_v2_4x3.jpg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 30cm;
-    width: 1489px;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.card1 {
+    grid-area: nosotros_nosotros;
+}
+
+.card1 p{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .footer_nosotros{
     grid-area: footer_nosotros;
-    color: white;
-    background-color: #000000;
+    color: rgb(255, 255, 255);
     font-family: Nike;
-    text-align: center;
-    width: 1489px;
-    height: 6cm;
+    background: radial-gradient(
+        300% 200% at 50% 96%,
+        rgb(137, 21, 253) 12%,
+        rgb(0, 0, 0) 24%
+      );
+      transform: translate(0px, 0px);
+      font-size: 15px;
 }
 
-.footer_nosotros div{
-    margin: 1cm 2cm 1cm 3cm;
-    display: inline-block;
+
+@media screen and (min-width: 1px){
+
+    .card1 p {
+        display: none;
+    }
+
 }
 
-@media screen and (min-width: 767px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
 
-    .header_nosotros{
-        background-color: #ffffff;
-    }
-
-    .header_nosotros nav ul li a{
-        color: rgb(0, 0, 0);
-    }
-
-    .footer_nosotros{
-        color: rgb(0, 0, 0);
-        background-color: #ffffff;
-    }
-}
-
-@media screen and (min-width: 768px){
-
-    .header_nosotros{
-        background-color: rgb(255, 0, 0);
-    }
-
-    .header_nosotros nav ul li a{
-        color: rgb(234, 255, 0);
-    }
-
-    .footer_nosotros{
-        background-color: rgb(255, 0, 0);
-        color: rgb(234, 255, 0);
+    .card1 p {
+        display: none;
     }
 }
 
 @media screen and (min-width: 1024px){
 
-    .header_nosotros{
-        background-color: #000000;
-    }
-
-    .header_nosotros nav ul li a{
-        color: rgb(255, 255, 255);
-    }
-
-    .footer_nosotros{
-        color: rgb(255, 255, 255);
-        background-color: #000000;
+    .card1 p {
+        display:contents;
     }
 }
 
@@ -585,106 +374,93 @@ body{
         "footer_unete";
 }
 
-.header_unete{
-    grid-area: header_unete;
-    font-family: Nike;
-    background-color: #000000;
-    height: 4cm;
-    text-align: center;
-    padding: auto;
-    width: 1489px;
-}
-
-.header_unete nav ul li{
-    grid-area: header_unete;
-    list-style-type: none;
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 30px;
-}
-
-.header_unete nav ul li a{
-    grid-area: header_unete;
-    color: rgb(255, 255, 255);
-    text-decoration:none;
-    font-size: 1cm;
-}
-
-.header_unete img{
-    grid-area: header_unete;
-    height: 170px;
-    width: 200px;
-}
-
 .unete_unete{
     grid-area: unete_unete;
     background-image:url( https://resourcepacks24.de/storage/screenshots/461430-91163bac-be3d-45f9-a177-560fcec7f150.jpg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 30cm;
-    width: 1489px;
+    background-attachment: fixed;
+    background-position: center center;
+
 }
+
+.h1_unete{
+    grid-area: unete_unete;
+    color: rgb(1, 61, 104);
+    font-size: 50px;
+    font-weight: bold;
+}
+
 
 .footer_unete{
     grid-area: footer_unete;
-    color: white;
-    background-color: #000000;
+    color: rgb(255, 255, 255);
     font-family: Nike;
-    text-align: center;
-    width: 1489px;
-    height: 6cm;
+    background: radial-gradient(
+        300% 200% at 50% 96%,
+        rgb(137, 21, 253) 12%,
+        rgb(0, 0, 0) 24%
+      );
+      transform: translate(0px, 0px);
+      font-size: 15px;
 }
 
-.footer_unete div{
-    margin: 1cm 2cm 1cm 3cm;
+.progreso{
+    background-image:url( https://lh3.googleusercontent.com/w9A7Qzfyjsq0PutQWKkh7yQQxTxgnqmpLK-R_N0eUuVQZciUlgPkBRtVSJa8TdGxilPTHvJu8th87Awu0pNpdIygXqcsl9Bu2EYBbNA=w600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.h1_progreso{
+    font-size: 4cm;
+    color: white;
+}
+
+.socialIcons li {
+    background-color: yellow;
+    list-style: none;
     display: inline-block;
-}
+    margin: 4px;
+    border-radius: 2em;
+    overflow: hidden;
+ }
 
-@media screen and (min-width: 767px){
+  .socialIcons li a {
+    display: block;
+    padding: 1.5em;
+    min-width: 1.28571429em;
+    max-width: 1.28571429em;
+    height: 1.28571429em;
+    white-space: nowrap;
+    line-height: 1.5em; 
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: arial;
+    color: #fff;
+  }
 
-    .header_unete{
-        background-color: #ffffff;
-    }
+  .socialIcons li i {
+    margin-right: 0.5em;
+  }
 
-    .header_unete nav ul li a{
-        color: rgb(0, 0, 0);
-    }
+  .socialIcons li:hover a {
+    max-width: 200px;
+    padding-right: 2em;
+  }
 
-    .footer_unete{
-        color: rgb(0, 0, 0);
-        background-color: #ffffff;
-    }
-}
+  .socialIcons .facebook {
+    background-color: #3b5998;
+    box-shadow: 0 0 16px #3b5998;
+  }
 
-@media screen and (min-width: 628px){
+  .socialIcons .twitter {
+    background-color: #00aced;
+    box-shadow: 0 0 16px #00aced;
+  }
 
-    .header_unete{
-        background-color: rgb(255, 0, 0);
-    }
-
-    .header_unete nav ul li a{
-        color: rgb(234, 255, 0);
-    }
-
-    .footer_unete{
-        background-color: rgb(255, 0, 0);
-        color: rgb(234, 255, 0);
-    }
-}
-
-@media screen and (min-width: 1024px){
-
-    .header_unete{
-        background-color: #000000;
-    }
-
-    .header_unete nav ul li a{
-        color: rgb(255, 255, 255);
-    }
-
-    .footer_unete{
-        color: rgb(255, 255, 255);
-        background-color: #000000;
-    }
-}
+  .socialIcons .instagram {
+    background-color: #cd486b;
+    box-shadow: 0 0 16px #cd486b;
+  }

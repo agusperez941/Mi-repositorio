@@ -1,0 +1,31 @@
+$colorbg: grey;
+$card-bg: rgb(0, 0, 0);
+$thumbnail-border-color: rgb(122, 27, 255);
+$thumbnail-border-width: 10px;
+
+.img-thumbnail{
+    border-color: $thumbnail-border-color;
+    border-width: $thumbnail-border-width;
+    margin-top: 20px;
+}
+
+@mixin fontstyle($color) {
+    color: blue;
+    background-color: $color;
+}
+
+.tituloindex {
+    @include fontstyle(rgba(128, 128, 128, 0));
+}
+
+.card {
+    background-color: $card-bg;
+}
+
+.card-contenedor {
+    align-content: center;
+}
+
+$mark-bg: rgba(0, 0, 0, 0.327);
+
+$yellow-100: rgba(0, 0, 0, 0.327);

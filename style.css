@@ -1,0 +1,20 @@
+.img-thumbnail {
+  border-color: #7a1bff;
+  border-width: 10px;
+  margin-top: 20px;
+}
+
+.tituloindex {
+  color: blue;
+  background-color: rgba(128, 128, 128, 0);
+}
+
+.card {
+  background-color: black;
+}
+
+.card-contenedor {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+/*# sourceMappingURL=style.css.map */
